@@ -5,24 +5,17 @@ public:
         
         if(r*c!= row*col) return mat;
         vector<vector<int>>ans;
-        vector<int>single;
-        
-        for(auto it:mat){
-            
-            for(auto et: it){
-                single.push_back(et);
+        vector<int>temp;
+        for(int i=0; i<row; i++){
+            for(int j=0; j<col; j++){
+                temp.push_back(mat[i][j]);
+                if(temp.size() == c){
+                    ans.push_back(temp);
+                    temp.clear();
+                }
             }
         }
         
-        int it=0;
-        for(int i=0; i<r; i++){
-            
-            vector<int>temp;
-            for(int j=0; j<c; j++){
-                temp.push_back(single[it++]);
-            }
-            ans.push_back(temp);
-        }
         return ans;
     }
 };
