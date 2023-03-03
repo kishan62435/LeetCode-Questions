@@ -4,10 +4,10 @@ public:
         
         int hsz= haystack.size(), nsz = needle.size();
         
-        if(hsz == nsz){
-            if( haystack == needle) return 0;
-            else return -1;
-        } 
+        // if(hsz == nsz){
+        //     if( haystack == needle) return 0;
+        //     else return -1;
+        // } 
         
         
         for(int i=0; i<=hsz-nsz; i++){
