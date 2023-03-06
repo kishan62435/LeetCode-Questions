@@ -14,7 +14,7 @@ public:
                 ans=i;
                 count++;
             }
-            if(count==k) return ans;
+            // if(count==k) return ans;
             i++;
         }
         return ans;
